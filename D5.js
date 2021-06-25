@@ -43,7 +43,7 @@ It should return triple their absolute difference if the given number is greater
 
 const crazyDiff = function (a) {
 let result = (a / 19)
-if (a <= 19) {
+if (a > 19) {
     return result * 3
 } else {
     return result
@@ -55,7 +55,14 @@ console.log(result)
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
 
-/* WRITE YOUR CODE HERE */
+const boundary = function(n){
+    let result = (((Math.abs(100 - n) <= 20) ||
+    (Math.abs(400 - n) <= 20)))
+return result
+}
+
+console.log(boundary(10))
+console.log(boundary(90))
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
