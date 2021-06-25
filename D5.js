@@ -68,6 +68,15 @@ console.log(boundary(90))
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
+const strivify = function(str){
+    var string2 = "";
+    for(var i = 0; i < str.length; i++) { 
+        if(str[i] === "a" || str[i] === "e" || 
+        str[i] === "i" || str[i] === "o" ||
+        str[i] === "u") { 
+        string2 += (str[i]); 
+        }
+}
 
 /* WRITE YOUR CODE HERE */
 
