@@ -23,7 +23,16 @@ console.log(result)
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
+const crazySum = function (a,b) {
+    let result = (a + b)
+    if ( a === b) {
+        return result
+    } else {
+        return result * 3
+    }
+}
 
+crazySum(3, 5)
 
 
 
